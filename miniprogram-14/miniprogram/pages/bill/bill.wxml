@@ -1,0 +1,2 @@
+<!--pages/bill/bill.wxml-->
+{{username}},你好！你当前的宿舍的费用还有：100元

@@ -1,0 +1,26 @@
+/* pages/weather/weather.wxss */
+.title{
+  top: 10px;
+color:black;
+font-weight:bolder;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+line-height:10px;
+}
+.main{
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+color: #ffffff;
+background-color: #7bc4ff;
+font-weight:bolder;
+line-height:40px;
+z-index: -1;
+}
+.weapic{
+  display: flex;
+  top: 0px;
+}

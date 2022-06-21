@@ -1,0 +1,26 @@
+<!--pages/info/info.wxml-->
+<view class="v1" style="width: 769rpx; height: 1236rpx; display: block; box-sizing: border-box; left: -15rpx; top: -17rpx; position: absolute">
+    <view class="v2" style="width: 593rpx; height: 786rpx; display: block; box-sizing: border-box; left: 87rpx; top: -270rpx; position: relative">
+        <view class="imagebox">
+            <image src="/pic/cmc.png" class="logo" style="position: relative; left: -5rpx; top: -68rpx; width: 165rpx; height: 165rpx; display: block; box-sizing: border-box"></image>
+        </view>
+        <form catchsubmit="formSubmit" name="login_register">
+            <view class="nameCs" style="position: absolute; left: 29rpx; top: 125rpx">
+                <image src="/pic/name.png" class="nameImage"></image>
+                <input placeholder="用户名" bindinput="usernameInput" class="inputView" name="username" maxlength="10"/>
+            </view>
+            <view class=passwordCs" style="position: absolute; left: 29rpx; top: 153rpx">
+                <image src="/pic/password.png" class="keyImage"></image>
+                <input type="{{passwordType}}" placeholder="密码" bindinput="passwordInput" class="inputView" name="password" value="{{password}}" maxlength="30"/>
+                <image src="{{eyeImage}}" bindtap="eyeImageswitch" class="eyeImage"></image>
+            </view>
+            <view class="bottom" style="position: absolute; left: 8rpx; top: 242rpx; width: 544rpx; height: 516rpx; display: block; box-sizing: border-box">
+                <navigator class="forget" hover-stay-time="300" style="position: relative; left: 24rpx; top: 155rpx">忘记密码?</navigator>
+                <navigator class="register" hover-stay-time="300" style="position: relative; left: 288rpx; top: 155rpx">注册账号</navigator>
+                <view class="login-btn" style="position: relative; left: -2rpx; top: 401rpx; width: 544rpx; height: -52rpx; display: block; box-sizing: border-box">
+                    <button type="primary" formType="submit" class="loginbtn" style="position: relative; left: -5rpx; top: -176rpx">查询</button>
+                </view>
+            </view>
+        </form>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+/* pages/light/light.wxss */
+.container{
+  height: 100%;
+  width: 100%;
+  background-image: url(/pic/灯光.jpg);
+}
+.main{
+  background-color: #004080;
+  color: white;
+  display: flex;
+  top:150px;
+}
+.yuyinBtn {
+  width: 70%;
+  position: absolute;
+  right: 205rpx;
+  bottom: 120rpx;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background: rgb(79, 173, 228);
+  color: #c9e2ded2;
+}
+ 
+.yuyinBtnBg {
+  background: #eee;
+}
+ 
+.yuyinBtn::after {
+  /* background: #fff; *//* color: #000; */
+  border-radius: 0;
+  border: none;
+}

@@ -1,0 +1,16 @@
+<!--pages/weather/weather.wxml-->
+<view class="main">
+        <view>查询时间:{{w_time}}</view></view>
+        <view class="main">省份:{{w_province}}</view>
+        <view class="main">城市/地区:{{w_city}}</view>
+        <view class="main">当日气温:{{w_temp}}</view>
+        <view class="main">天气:{{w_wea}}</view>
+        <view class="main">风力：{{w_windpow}}</view>
+
+<view class="weapic">
+<image wx:if="{{w_wea=='阴'}}"src="/pic/多云.gif" mode="scaleToFill"></image>
+<image wx:if="{{w_wea=='晴'}}"src="/pic/晴动态.gif" mode="scaleToFill"></image>
+<image wx:if="{{w_wea=='小雨'}}"src="/pic/雨.gif" mode="scaleToFill"></image>
+<image wx:if="{{w_wea=='中雨'}}"src="/pic/雨.gif" mode="scaleToFill"></image>
+<image wx:if="{{w_wea=='大雨'}}"src="/pic/雨.gif" mode="scaleToFill"></image>
+</view>

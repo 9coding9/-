@@ -1,0 +1,17 @@
+<!--pages/light/light.wxml-->
+<view class="container">
+<view style="width: 750rpx; height: 181rpx; display: block; box-sizing: border-box">
+  <button class="main" bindtap="openLight" style="position: relative; left: 0rpx; top: 10rpx">开启宿舍灯光</button>
+  <button class="main" bindtap="closeLight" style="position: relative; left: 0rpx; top: 36rpx">关闭宿舍灯光</button>
+</view>
+
+<view class=''>
+    <button class="yuyinBtn {{recordState == true ? 'yuyinBtnBg':''}}" bindtouchstart="touchStart" bindtouchend="touchEnd" style="position: absolute; left: 153rpx; top: 584rpx; width: 427rpx; height: 106rpx; display: block; box-sizing: border-box">
+      <text wx:if="{{recordState == false}}">按住 说话</text>
+      <text wx:else>松开 结束</text>
+    </button>
+  </view>
+  
+  
+
+</view>

@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/info/info",
+    "pages/light/light",
+    "pages/weather/weather",
+    "pages/logs/logs",
+    "pages/bill/bill"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#004080",
+    "navigationBarTitleText": "智慧宿舍",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#004080"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/pic/主页1.png",
+        "selectedIconPath": "/pic/主页2.png"
+      },
+      {
+        "pagePath": "pages/weather/weather",
+        "text": "天气",
+        "iconPath": "/pic/天气1.png",
+        "selectedIconPath": "/pic/天气2.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "宿舍信息",
+        "iconPath": "/pic/信息1.png",
+        "selectedIconPath": "/pic/信息2.png"
+      },
+      {
+        "pagePath": "pages/light/light",
+        "text": "宿舍灯光",
+        "iconPath": "/pic/灯光1.png",
+        "selectedIconPath": "/pic/灯光2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.5",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

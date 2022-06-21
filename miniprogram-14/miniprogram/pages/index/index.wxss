@@ -1,0 +1,37 @@
+/**index.wxss**/
+
+.swiper1{
+  width: 100%;
+  display: center;
+  height:20px;
+}
+.text1{
+  width:100%;
+  position: relative;
+  top:130px;
+}
+.backgr{
+  position:absolute;
+  display: flex;
+  z-index:-1;
+}
+.time{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+top:168px;
+color: #004080;
+font-weight:bolder;
+}
+.showlist{
+  position: relative;
+  top: 130px;
+ left: 20px;
+color: #004080;
+font-weight: lighter;
+}
+.search_db{
+  position: relative;
+  top:110px;
+}

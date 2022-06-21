@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view >
+
+<view class="swiper1">
+<swiper indicator-dots="true" autoplay="true" interval="2000">
+<swiper-item >
+<image src="/pic/1644645912883.jpg" style="width: 750rpx; height: 350rpx; display: inline-block; box-sizing: border-box"></image>
+</swiper-item>
+<swiper-item >
+<image src="/pic/1644645767738.jpg"></image>
+</swiper-item>
+<swiper-item >
+<image src="/pic/1644646237727.jpg"></image>
+</swiper-item>
+<swiper-item >
+<image src="/pic/1644646289416.jpg"></image>
+</swiper-item>
+</swiper>
+</view>
+
+          <view class="text1" style="width: 750rpx; height: 183rpx; display: block; box-sizing: border-box; left: 0rpx; top: 305rpx">
+             <button class="button" bindtap="modalinput" style="position: relative; left: 0rpx; top: 19rpx">写下今天需要做的事情吧~</button>
+          </view>
+      <view class="time">{{logs}}</view>
+      <modal hidden="{{hiddenmodalput}}" title="写下今天需要做的事情吧~" confirm-text="提交" cancel-text="取消"    bindcancel="cancel" bindconfirm="confirm"> 
+           <input bindinput="getValue" type='text'placeholder="请输入内容" value="{{info}}" focus/>
+       </modal>
+<button bindtap="search_db" class="search_db">查询数据库数据</button>
+         <view wx:for="{{to_do_list}}" class="showlist">
+                 <view>{{item.time}}</view>
+                 <view>{{item.value}}</view>
+         </view>
+</view>
